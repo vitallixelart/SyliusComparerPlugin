@@ -14,9 +14,8 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('locastic_sylius_comparer_plugin');
-
-        $rootNode = $treeBuilder->getRootNode();
+        $treeBuilder = new TreeBuilder();
+        $rootNode = $treeBuilder->root('locastic_sylius_comparer_plugin');
 
         return $treeBuilder;
     }
