@@ -5,7 +5,7 @@ imports:
 
 sylius_ui:
     events:
-        sylius.admin.layout.javascripts:
+        sylius.shop.layout.header:
             blocks:
                 javascripts:
                     template: "@LocasticSyliusComparerPlugin/_stylesheets.html.twig"
