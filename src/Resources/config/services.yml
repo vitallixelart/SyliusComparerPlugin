@@ -23,15 +23,15 @@ services:
         arguments:
             - "@sylius.random_generator"
 
-    locastic_sylius_comparer_plugin.block.inject_style:
-        class: Sylius\Bundle\UiBundle\Block\BlockEventListener
-        arguments:
-            - "LocasticSyliusComparerPlugin::_stylesheets.html.twig"
-        tags:
-            -
-                name: kernel.event_listener
-                event: sonata.block.event.sylius.shop.layout.header
-                method: onBlockEvent
+#    locastic_sylius_comparer_plugin.block.inject_style:
+#        class: Sylius\Bundle\UiBundle\Block\BlockEventListener
+#        arguments:
+#            - "LocasticSyliusComparerPlugin::_stylesheets.html.twig"
+#        tags:
+#            -
+#                name: kernel.event_listener
+#                event: sonata.block.event.sylius.shop.layout.header
+#                method: onBlockEvent
 
     locastic.sylius_comparer_plugin.utils.message_redirect_helper:
         class: Locastic\SyliusComparerPlugin\Utils\MessageRedirectHelper
